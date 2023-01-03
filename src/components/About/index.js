@@ -10,8 +10,8 @@ function About() {
                 
                 
             </div>
-            <div>
-                <h2>About Me</h2>
+            <div className="my-5">
+                <h2 id="about">About Me</h2>
             </div>
             <div>
                 <p>Hello, I am Tatiana Bertazoli and I am a Junior Software Developer.

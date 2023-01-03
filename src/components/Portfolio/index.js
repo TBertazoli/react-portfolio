@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
+
 
 
 function Portfolio() {
+    const [projects] = useState([
+        {
+            name: "Prework Study Guide",
+            description: "This projects was a first introduction to coding where concepts like git and git hub were introduced as well as basic HTML and CSS"
+        }
+    ]);
     return (
         <section>
+         
             {/* <div class="title">
                 <h2>Work</h2>
             </div>

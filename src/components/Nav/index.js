@@ -1,18 +1,19 @@
 import React from "react";
 
 
-function Nav() {
+function Nav(props) {
+    const {
+        setContactSelected
+    } = props;
     return (
         <header>
             <h2>
-                <a href="/">
-                    <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-                </a>
+              React Professional Portofolio
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about">
+                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
                             About me
                         </a>
                     </li>
