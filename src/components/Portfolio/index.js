@@ -1,25 +1,45 @@
 import React, { useState } from 'react';
-import prework from '../../assets/Projects/Prework.png'
+// import prework from '../../assets/Projects/Prework.png'
+// import runBuddy from '../../assets/Projects/Horieson.png'
+// import labRats from '../../assets/Projects/lab-rats.png'
 
 
 
 function Portfolio() {
-    // const [projects] = useState([
-    //     {
-    //         name: "Prework Study Guide",
-    //         description: "This projects was a first introduction to coding where concepts like git and git hub were introduced as well as basic HTML and CSS"
-    //     }
-    // ]);
+    const [projects] = useState([
+        {
+            name: "Prework Study Guide",
+            description: ""
+        },
+        {
+            name: "Run Buddy",
+            description: ""
+        },
+        {
+            name: "Horieson",
+            description: ""
+        },
+    ]);
+
+
+
     return (
-        <section>       
+        <section className='my_work'>
             <div className="title">
                 <h2>Portfolio</h2>
             </div>
             <div className="description">
-                <div className="prework box">
-                    <img src={prework}alt=""/>
-                        <a href="https://tbertazoli.github.io/prework-study-guide/">Prework Study Guide</a>
-                </div>
+                {projects.map((image, i) => (
+                    <img src={require(`../../assets/Projects/${image}${i}.png`)}
+                        alt={image.name}
+                        className="prework box full_width full_height"
+                        key={image.name}
+                    />
+                ))}
+                {/* <div >
+                     className="" />
+                        <a href="https://tbertazoli.github.io/prework-study-guide/"></a>
+                </div> */}
                 {/* <div class="run_buddy box">
                     <img class="full_width full_height" src="assets/images/run-buddy.png">
                         <a href="https://tbertazoli.github.io/run-buddy/">Run Buddy</a>
