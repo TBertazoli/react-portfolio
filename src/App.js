@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  
   return (
     <body>
       <header>
@@ -17,7 +18,9 @@ function App() {
       </header>
       <main>
         <About></About>
-        <Portfolio></Portfolio>
+        <Portfolio
+     
+        ></Portfolio>
         <Contact></Contact>
       </main>            
     </body>

@@ -68,7 +68,7 @@ header {
 /*End of Header section*/
 
 /*Hero Section*/
-.hero {  
+.hero {
   min-height: 200px;
   display: flex;
   justify-content: right;
@@ -119,7 +119,7 @@ header {
   display: flex;
 }
 
-.description {    
+.projects {
   width: 80%;
   text-align: justify;
   padding: 20px 50px 20px 20px;
@@ -127,7 +127,7 @@ header {
   color: var(--secondary-color);
 }
 
-.description a {
+.projects a {
   background-color: var(--primary-color);
   text-align: right;
   margin-bottom: 10px;
@@ -138,11 +138,8 @@ header {
   color: var(--tertiary--color);
 }
 
-.horiseon,
-.prework,
-.run_buddy,
-.bikini,
-.lab {
+
+.prework {
   position: relative;
 }
 
@@ -165,11 +162,11 @@ header {
   border: 5px solid var(--primary-color);
   box-shadow: 4px 4px 8px #493858;
   border-radius: 5px;
-  margin: 20px;  
+  margin: 20px;
   max-width: 60%;
 }
 
-.box a{
+.box a {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -183,7 +180,7 @@ header {
 /*this will be applied on any screen smaller than 980px*/
 @media screen and (max-width:980px) {
   .description {
-      min-height: 500px;
+    min-height: 500px;
   }
 }
 
@@ -191,24 +188,24 @@ header {
 /*this will be applied on any screen between 768px to 575px*/
 @media screen and (max-width:768px) {
   .contact_info {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact_info div {
-      border-bottom: none;
+    border-bottom: none;
   }
 
   .navigation nav ul {
-      margin: 0;
+    margin: 0;
   }
 
   .navigation nav ul li a {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .title {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -218,20 +215,20 @@ header {
 @media screen and (max-width:575px) {
 
   .navigation nav ul li a {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .title {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .description {
-      padding: 5px;
-      font-size: 12px;
+    padding: 5px;
+    font-size: 12px;
 
   }
-  
+
   .contact_me .description {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
