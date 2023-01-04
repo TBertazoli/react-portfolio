@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-
+import prework from '../../assets/Projects/Prework.png'
 
 
 function Portfolio() {
-    const [projects] = useState([
-        {
-            name: "Prework Study Guide",
-            description: "This projects was a first introduction to coding where concepts like git and git hub were introduced as well as basic HTML and CSS"
-        }
-    ]);
+    // const [projects] = useState([
+    //     {
+    //         name: "Prework Study Guide",
+    //         description: "This projects was a first introduction to coding where concepts like git and git hub were introduced as well as basic HTML and CSS"
+    //     }
+    // ]);
     return (
-        <section>
-         
-            {/* <div class="title">
-                <h2>Work</h2>
+        <section>       
+            <div class="title">
+                <h2>Portfolio</h2>
             </div>
             <div class="description">
                 <div class="prework box">
-                    <img class="full_width full_height" src="assets/images/Prework.png">
+                    <img src={prework}alt=""/>
                         <a href="https://tbertazoli.github.io/prework-study-guide/">Prework Study Guide</a>
                 </div>
-                <div class="run_buddy box">
+                {/* <div class="run_buddy box">
                     <img class="full_width full_height" src="assets/images/run-buddy.png">
                         <a href="https://tbertazoli.github.io/run-buddy/">Run Buddy</a>
                 </div>
@@ -36,7 +35,7 @@ function Portfolio() {
                     <img class="full_width full_height" src="./assets/images/lab-rats.png">
                         <a href="https://obscure-lake-69191.herokuapp.com/">Lab Bench Buddy</a>
                 </div> */}
-            {/* </div> */}
+            </div>
         </section>
 
 

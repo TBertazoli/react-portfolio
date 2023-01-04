@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import './App.css';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -18,7 +18,7 @@ function App() {
       <main>
         <About></About>
         <Portfolio></Portfolio>
-        <Footer></Footer>
+        <Contact></Contact>
       </main>            
     </body>
 
