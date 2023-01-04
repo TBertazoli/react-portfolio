@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: rgb(105, 73, 103);
+  --secondary-color: #434146;
+  --tertiary--color: White;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(171, 165, 179);
+  font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*header section*/
+header {
+  background-color: var(--primary-color);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 80px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main_title {
+  background-color: white;
+  padding: 0 5px 0 50px;
+  margin: 10px 10px 20px 0;
+  font: 20px normal;
+  height: auto;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main_title a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font: sans-serif;
+}
+
+.navigation {
+  font: var(--tertiary--color);
+}
+
+.navigation nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0 50px;
+}
+
+.navigation li {
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--tertiary--color);
+  margin: 0 6px;
+}
+
+.navigation nav ul li a {
+  padding: 25px 20px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: var(--tertiary--color);
+  text-decoration: none;
+
+}
+
+/*End of Header section*/
+
+/*Hero Section*/
+.hero {  
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+
+.subtitle {
+  font-size: 20px;
+  background-color: var(--tertiary--color);
+  color: var(--primary-color);
+  padding: 5px 5px;
+  margin: 15px;
+}
+
+/*End of Hero Section*/
+
+/*content section*/
+.title {
+  width: 20%;
+  border-right: 3px solid black;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  font-size: 25px;
+  padding: 0 10px;
+  margin: 15px;
+  color: var(--secondary-color);
+  text-align: end;
+}
+
+/*about me section*/
+.about_me,
+.my_work,
+.contact_me {
+  display: flex;
+}
+
+.about_me img {
+  height: 120px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+/*work section*/
+.my_work {
+  display: flex;
+}
+
+.description {    
+  width: 80%;
+  text-align: justify;
+  padding: 20px 50px 20px 20px;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.description a {
+  background-color: var(--primary-color);
+  text-align: right;
+  margin-bottom: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 3px;
+  border: 2px solid var(--primary-color);
+  color: var(--tertiary--color);
+}
+
+.horiseon,
+.prework,
+.run_buddy,
+.bikini,
+.lab {
+  position: relative;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.full_height {
+  height: 100%;
+}
+
+.second_row_projects,
+.third_row_projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.box {
+  border: 5px solid var(--primary-color);
+  box-shadow: 4px 4px 8px #493858;
+  border-radius: 5px;
+  margin: 20px;  
+  max-width: 60%;
+}
+
+.box a{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*Contact Me section*/
+
+
+
+/*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+/*this will be applied on any screen smaller than 980px*/
+@media screen and (max-width:980px) {
+  .description {
+      min-height: 500px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+/*this will be applied on any screen between 768px to 575px*/
+@media screen and (max-width:768px) {
+  .contact_info {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .contact_info div {
+      border-bottom: none;
+  }
+
+  .navigation nav ul {
+      margin: 0;
+  }
+
+  .navigation nav ul li a {
+      font-size: 22px;
+  }
+
+  .title {
+      font-size: 18px;
+  }
+}
+
+
+/*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+/*this will be applied on any screen smaller than 575px*/
+@media screen and (max-width:575px) {
+
+  .navigation nav ul li a {
+      font-size: 18px;
+  }
+
+  .title {
+      font-size: 14px;
+  }
+
+  .description {
+      padding: 5px;
+      font-size: 12px;
+
+  }
+  
+  .contact_me .description {
+      font-size: 14px;
   }
 }

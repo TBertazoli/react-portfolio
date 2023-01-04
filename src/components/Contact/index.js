@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <section>
-      < div >
+      < div>
         <h2>Contact Me</h2>
         <a href="mailto:tatianabertazoli@gmail.com"><AiOutlineMail /></a>
         <a href="https://github.com/TBertazoli"><AiOutlineGithub /></a>

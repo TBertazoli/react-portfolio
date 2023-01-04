@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import prework from '../../assets/Projects/Prework.png'
 
 
+
 function Portfolio() {
     // const [projects] = useState([
     //     {
@@ -11,11 +12,11 @@ function Portfolio() {
     // ]);
     return (
         <section>       
-            <div class="title">
+            <div className="title">
                 <h2>Portfolio</h2>
             </div>
-            <div class="description">
-                <div class="prework box">
+            <div className="description">
+                <div className="prework box">
                     <img src={prework}alt=""/>
                         <a href="https://tbertazoli.github.io/prework-study-guide/">Prework Study Guide</a>
                 </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import coverImage from '../../assets/Cover image/vecteezy_abstract-technology-background_8680961.jpg'
+import profilePic from '../../assets/Projects/DSC08249_2.jpg'
+
 
 
 function About() {
@@ -14,7 +16,8 @@ function About() {
                 <h2 id="about">About Me</h2>
             </div>
             <div>
-                <p>Hello, I am Tatiana Bertazoli and I am a Junior Software Developer.
+                <p><img class="box" src={profilePic} alt=""></img>
+                    Hello, I am Tatiana Bertazoli and I am a Junior Software Developer.
                     I was born and raised in Brazil where I got a degree in Chemistry. I moved to Canada in 2010 and spent 8 years there whith
                     my family. In 2018 we decided to move to Texas where I decided to pursue a career in web development.
                     In 2022 I started a bootcamp at Rice University and so far I have been working on some small personal projects to improve my knowledge
