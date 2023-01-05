@@ -1,5 +1,5 @@
 import React from "react";
-import coverImage from '../../assets/Cover image/vecteezy_abstract-technology-background_8680961.jpg'
+import coverImage from '../../assets/cover image/vecteezy_abstract-technology-background_8680961.jpg'
 import profilePic from '../../assets/DSC08249_2.jpg'
 
 

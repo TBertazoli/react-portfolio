@@ -1,43 +1,61 @@
 import React, { useState } from 'react';
-// import prework from '../../assets/Projects/Prework.png'
-// import runBuddy from '../../assets/Projects/Horieson.png'
-// import labRats from '../../assets/Projects/lab-rats.png'
-
+import Modal from '../Modal';
 
 
 function Portfolio() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentProject, setCurrentProject] = useState();
+
     const [projects] = useState([
         {
             name: "Prework Study Guide",
-            description: ""
+            description: "",
+            website: "https://tbertazoli.github.io/Horiseon/",
+            repository: "https://github.com/TBertazoli/Horiseon"
         },
         {
             name: "Run Buddy",
-            description: ""
+            description: "",
+            website: "",
+            repository: ""
         },
         {
             name: "Horiseon",
-            description: ""
+            description: "",
+            website: "https://tbertazoli.github.io/Horiseon/",
+            repository: ""
         },
         {
             name: "Lab Notebook",
-            description: ""
+            description: "",
+            website: "",
+            repository: ""
         },
     ]);
+
+    const openLink = (image, i) => {
+        setCurrentProject({ ...image, index: i });
+        setIsModalOpen(!isModalOpen);
+    };
+
     return (
         <section className='my_work'>
             <div className="title">
                 <h2>Portfolio</h2>
             </div>
-            <div className="projects">
-                {projects.map((image, i) => {
-                    (<img src={require(`../../assets/Projects/${i}.png`)}
+            <div>
+                {isModalOpen && (
+                    <Modal onClose={openLink} currentProject={currentProject} />
+                )}
+                <div className="projects">
+                    {projects.map((image, i) =>
+                    (<img src={require(`../../assets/projects/${i}.png`)}
                         alt={image.name}
                         className="prework box"
-                        // onClick={() => openLink(image, i)}
+                        onClick={() => openLink(image, i)}
                         key={image.name} />)
-                })}
-
+                    )}
+                </div>
             </div>
         </section>
 
