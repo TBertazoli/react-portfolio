@@ -23,13 +23,13 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
-      <main>
-        <About></About>
+      <main>        
         <Portfolio
           projects={projects}
           currentProject={currentProject}
           setcurrentProject={setCurrentProject}
         ></Portfolio>
+        <About></About>
         <Contact></Contact>
       </main>
     </div>

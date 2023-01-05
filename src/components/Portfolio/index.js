@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import coverImage from '../../assets/cover image/vecteezy_abstract-technology-background_8680961.jpg'
 import Modal from '../Modal';
 
 
@@ -39,7 +40,12 @@ function Portfolio() {
     };
 
     return (
-        <section className='my_work'>
+
+        <section>
+            <div className="cover">
+                <h2 className="subtitle">React Professional Portfolio</h2>
+                <img src={coverImage} className="cover_image" alt="cover" />
+            </div>
             <div className="title">
                 <h2>Portfolio</h2>
             </div>
@@ -48,13 +54,19 @@ function Portfolio() {
                     <Modal onClose={openLink} currentProject={currentProject} />
                 )}
                 <div className="projects">
-                    {projects.map((image, i) =>
-                    (<img src={require(`../../assets/projects/${i}.png`)}
-                        alt={image.name}
-                        className="prework box"
-                        onClick={() => openLink(image, i)}
-                        key={image.name} />)
-                    )}
+                    <div>
+                        {projects.map((image, i) =>
+                        (<div><img src={require(`../../assets/projects/${i}.png`)}
+                            alt={image.name}
+                            className="prework box"
+                            onClick={() => openLink(image, i)}
+                            key={image.name} />
+                            <h3 className=''>{image.name}</h3></div>
+                        )
+
+                        )}
+                    </div>
+
                 </div>
             </div>
         </section>

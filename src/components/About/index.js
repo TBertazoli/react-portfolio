@@ -1,5 +1,4 @@
 import React from "react";
-import coverImage from '../../assets/cover image/vecteezy_abstract-technology-background_8680961.jpg'
 import profilePic from '../../assets/DSC08249_2.jpg'
 
 
@@ -7,12 +6,6 @@ import profilePic from '../../assets/DSC08249_2.jpg'
 function About() {
     return (
         <section>
-            <div className="hero">
-                <div className="subtitle">
-                    <h2> React Professional Portfolio</h2>
-                </div>
-                <img src={coverImage} className="" style={{ width: "100%", height: "25%" }} alt="cover" />
-            </div>
             <div className="about_me">
                 <div className="title">
                     <h2>About Me</h2>
