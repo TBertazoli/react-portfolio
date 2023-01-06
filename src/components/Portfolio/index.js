@@ -10,7 +10,7 @@ function Portfolio() {
     const [projects] = useState([
         {
             name: "Prework Study Guide",
-            description: "",
+            description: "teste",
             website: "https://tbertazoli.github.io/Horiseon/",
             repository: "https://github.com/TBertazoli/Horiseon"
         },
@@ -46,7 +46,7 @@ function Portfolio() {
                 <h2 className="subtitle">React Professional Portfolio</h2>
                 <img src={coverImage} className="cover_image" alt="cover" />
             </div>
-            <div className="portfolio">
+            <div className="portfolio" id="portfolio">
                 <div className="title">
                     <h2>Portfolio</h2>
                 </div>

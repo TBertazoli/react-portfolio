@@ -165,18 +165,35 @@ header {
 }
 
 .modalContainer {
-  background: var(--darker);
+  background: var(--primary-color);
   border-radius: 5px;
-  max-width: 100%;
   margin: 50px auto;
   padding: 15px;
   width: 960px;
+  text-align: center;
 }
 
 .modalTitle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
+
+}
+
+.modalImage{
+  height: 70%;
+  width: 70%;
+}
+
+.modalContainer p{
+ font-weight: bold;
+  padding: 10px;
+ 
+}
+
+.modalContainer p a{
+  text-decoration: none;
+  color: var(--tertiary--color);
 }
 
 /*Contact Me section*/

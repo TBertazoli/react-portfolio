@@ -6,7 +6,7 @@ import profilePic from '../../assets/DSC08249_2.jpg'
 function About() {
     return (
         <section>
-            <div className="about_me">
+            <div id="about" className="about_me">
                 <div className="title">
                     <h2>About Me</h2>
                 </div>

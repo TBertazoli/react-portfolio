@@ -8,13 +8,16 @@ const Modal = ({ onClose, currentProject }) => {
         <div className="modalBackdrop">
             <div className="modalContainer">
                 <h3 className="modalTitle">{name} </h3>
-                <img
-                    src={require(`../../assets/projects/${index}.png`)}
-                    alt="current project"
-                />
+                <div>
+                    <a href={website}>
+                        <img className="modalImage"
+                            src={require(`../../assets/projects/${index}.png`)}
+                            alt="current project"
+                        />
+                    </a>
+                </div>
                 <p>{description}</p>
-                <p>{website}</p>
-                <p>{repository}</p>
+                <p><a href={repository}>Acces Git Hub Repository</a></p>
                 <button type="button" onClick={onClose}>
                     Close
                 </button>

@@ -17,7 +17,7 @@ function Nav(props) {
                 <nav>
                     <ul>
                         <li>
-                            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+                            <a href="#about">
                                 About me
                             </a>
                         </li>
