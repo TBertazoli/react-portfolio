@@ -10,9 +10,9 @@ function About() {
                 <div className="title">
                     <h2>About Me</h2>
                 </div>
-
                 <div className="description">
-                    <p><img className="box" src={profilePic} alt=""></img>
+                <p><img src={profilePic} alt=""></img>
+                    
                         Hello, I am Tatiana Bertazoli and I am a Junior Software Developer.
                         I was born and raised in Brazil where I got a degree in Chemistry. I moved to Canada in 2010 and spent 8 years there whith
                         my family. In 2018 we decided to move to Texas where I decided to pursue a new career in web development.

@@ -23,7 +23,7 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
-      <main>        
+      <main>
         <Portfolio
           projects={projects}
           currentProject={currentProject}

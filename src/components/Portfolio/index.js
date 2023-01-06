@@ -46,27 +46,27 @@ function Portfolio() {
                 <h2 className="subtitle">React Professional Portfolio</h2>
                 <img src={coverImage} className="cover_image" alt="cover" />
             </div>
-            <div className="title">
-                <h2>Portfolio</h2>
-            </div>
-            <div>
-                {isModalOpen && (
-                    <Modal onClose={openLink} currentProject={currentProject} />
-                )}
-                <div className="projects">
+            <div className="portfolio">
+                <div className="title">
+                    <h2>Portfolio</h2>
+                </div>
+                <div>
+                    {isModalOpen && (
+                        <Modal onClose={openLink} currentProject={currentProject} />
+                    )}
                     <div>
-                        {projects.map((image, i) =>
-                        (<div><img src={require(`../../assets/projects/${i}.png`)}
-                            alt={image.name}
-                            className="prework box"
-                            onClick={() => openLink(image, i)}
-                            key={image.name} />
-                            <h3 className=''>{image.name}</h3></div>
-                        )
-
-                        )}
+                        <div >
+                            {projects.map((image, i) =>
+                            (<div className="project_wrap"><img src={require(`../../assets/projects/${i}.png`)}
+                                alt={image.name}
+                                className="prework"
+                                onClick={() => openLink(image, i)}
+                                key={image.name} />
+                                <h3 className='project_name'>{image.name}</h3></div>                                
+                            )
+                            )}
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
