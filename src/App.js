@@ -7,6 +7,8 @@ import ContactForm from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [aboutMeSelected, setAboutMeSelected] = useState(true);
 
   return (
     <div>
@@ -14,17 +16,16 @@ function App() {
         <Nav
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
+          portfolioSelected={portfolioSelected}
+          setPortfolioSelected={setPortfolioSelected}
+          aboutMeSelected={aboutMeSelected}
+          setAboutMeSelected={setAboutMeSelected}
         ></Nav>
       </header>
       <main>
-        {!contactSelected ? (
-          <>
-            <About></About>
-            <Portfolio></Portfolio>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+        {aboutMeSelected && <About></About>}
+        {portfolioSelected && <Portfolio></Portfolio>}
+        {contactSelected && <ContactForm></ContactForm>}
       </main>
 
 

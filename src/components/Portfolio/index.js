@@ -39,7 +39,7 @@ function Portfolio() {
     };
 
     return (
-        <section className="hide">         
+        <section>         
             <div className="portfolio" id="portfolio">
                 <div className="title">
                     <h2>Portfolio</h2>
