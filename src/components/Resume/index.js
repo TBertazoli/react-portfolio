@@ -1,18 +1,62 @@
 import React from "react";
 import Footer from '../Footer'
+import resume from '../../assets/Copy of Resume.pdf'
 
 function Resume() {
     return (
         <section>
-            <div className="cover">
-                <h2 className="subtitle">React Professional Portfolio</h2>
-            </div>
-            <div id="about" className="about_me">
+            <div>
                 <div className="title">
-                    <h2>About Me</h2>
-                </div>
-                <div className="description">                    
-                    <p></p>
+                    <h2>Resume</h2>
+                </div>                
+                    <h3 className="download">Download my <a href={resume}>resume</a></h3>                
+                <div className="resume">
+                    <h2>Front-end Proficiencies</h2>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                    <li>
+                        JavaScript
+                    </li>
+                    <li>
+                        JQuery
+                    </li>
+                    <li>
+                        Responsive design
+                    </li>
+                    <li>
+                        React
+                    </li>
+                    <li>
+                        Bootstrap
+                    </li>
+
+
+                    <h2>Back-end Proficiencies</h2>
+                    <li>
+                        APIs
+                    </li>
+                    <li>
+                        Node
+                    </li>
+                    <li>
+                        Express
+                    </li>
+                    <li>
+                        MySQL
+                    </li>
+                    <li>
+                        Sequelize
+                    </li>
+                    <li>
+                        MoongoDB
+                    </li>
+                    <li>
+                        React
+                    </li>
                 </div>
             </div>
             <Footer></Footer>

@@ -17,8 +17,8 @@ const Modal = ({ onClose, currentProject }) => {
                     </a>
                 </div>
                 <p>{description}</p>
-                <p><a href={repository}>Acces Git Hub Repository</a></p>
-                <button type="button" onClick={onClose}>
+                <p><a href={repository}>Git Hub Repository</a></p>
+                <button type="button"className="button-72" onClick={onClose}>
                     Close
                 </button>
             </div>

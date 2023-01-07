@@ -118,7 +118,8 @@ header {
   margin: 10px;
 }
 
-.project_wrap {
+.project_wrap,
+.resume {
   background-color: var(--primary-color);
   margin: 10px;
   padding: 10px;
@@ -195,37 +196,50 @@ header {
   width: 80%;
   margin: auto;
 }
+
 .contact_me div {
   display: flex;
   margin-bottom: 10px;
 }
-    
+
 .contact_me div label {
   cursor: default;
   width: 20%;
   margin-left: 10px;
 }
 
-.contact_me textarea, .contact_me input {
+.contact_me textarea,
+.contact_me input {
   width: 80%;
 }
 
 .contact_me textarea {
   height: 120px;
-  border:3px;
-  padding:5px;
+  border: 3px;
+  padding: 5px;
 }
 
 .button_wrapper {
   justify-content: end;
 }
+
+/* resume section */
+.download {
+  margin: 20px;
+}
+
+.resume li,
+.resume h2 {
+  margin: 20px;
+}
+
 /* Footer section */
 
-.footer{
-  color: var(--secondary-color);  
+.footer {
+  color: var(--secondary-color);
   margin: 20px 10px 0px 60px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .links a {
@@ -234,17 +248,17 @@ header {
 }
 
 
-.button-72 {  
+.button-72 {
   align-items: center;
   background-color: initial;
   background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
   border-radius: 42px;
   border-width: 0;
-  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
   color: #FFFFFF;
   cursor: pointer;
   display: flex;
-  font-family: Quicksand,sans-serif;
+  font-family: Quicksand, sans-serif;
   font-size: 18px;
   font-weight: 700;
   justify-content: center;
@@ -254,7 +268,7 @@ header {
   padding: 18px 18px;
   text-align: center;
   text-decoration: none;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -265,12 +279,6 @@ header {
   background-image: linear-gradient(#B384C9, #391F5B 50%);
 }
 
-@media (min-width: 768px) {
-  .button-72 {
-    font-size: 21px;
-    padding: 18px 34px;
-  }
-}
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
 /*this will be applied on any screen smaller than 980px*/
@@ -287,7 +295,12 @@ header {
     display: flex;
     flex-direction: column;
   }
-
+ 
+    .button-72 {
+      font-size: 21px;
+      padding: 18px 34px;
+    }
+  
   .contact_info div {
     border-bottom: none;
   }
@@ -320,9 +333,13 @@ header {
     font-size: 14px;
   }
 
+  .button-72 {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+
   .description {
-    padding: 5px;
-    font-size: 12px;
+    padding: 5px;    
   }
 
   .contact_me .description {
