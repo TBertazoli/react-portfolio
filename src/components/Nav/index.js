@@ -30,11 +30,11 @@ function Nav(props) {
                         </li>
                         <li className={`${portfolioSelected && 'navActive'}`}>
 
-                            <a data-testid="portfolio" href="#portfolio" onClick={() => {
+                            <span data-testid="portfolio" onClick={() => {
                                 setAboutMeSelected(false)
                                 setContactSelected(false);
                                 setPortfolioSelected(true);
-                            }}>Portfolio</a>
+                            }}>Portfolio</span>
                         </li>
                         <li className={`${contactSelected && 'navActive'}`}>
                             <a href="#contact" onClick={() => {

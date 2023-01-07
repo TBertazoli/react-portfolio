@@ -41,9 +41,10 @@ header {
   font: sans-serif;
 }
 
-.navigation{
+.navigation {
   display: flex;
 }
+
 .navigation nav ul {
   list-style: none;
   display: flex;
@@ -51,8 +52,7 @@ header {
 }
 
 .navigation nav ul li,
-.navigation nav ul li a
- {
+.navigation nav ul li a {
   padding: 25px 20px;
   font-size: 30px;
   font-weight: lighter;
@@ -60,7 +60,9 @@ header {
   text-decoration: none;
 }
 
-
+.navigation nav ul li span {
+  cursor: pointer;
+}
 
 /*End of Header section*/
 
@@ -89,11 +91,9 @@ header {
 /*End of Hero Section*/
 
 /*about me section*/
-
 .about_me {
-  margin: 0px 10px 30px 0px;  
+  margin: 0px 10px 30px 0px;
   padding: 10px;
-
 }
 
 .description {
@@ -112,14 +112,11 @@ header {
 }
 
 /*portfolio section*/
-
-
 .title {
   font-size: 22px;
   color: var(--secondary-color);
   margin: 10px;
 }
-
 
 .project_wrap {
   background-color: var(--primary-color);
@@ -128,7 +125,6 @@ header {
   border: 2px solid var(--primary-color);
   color: var(--tertiary--color);
   margin-bottom: 20px;
-
 }
 
 .prework {
@@ -179,38 +175,102 @@ header {
 
 }
 
-.modalImage{
+.modalImage {
   height: 70%;
   width: 70%;
 }
 
-.modalContainer p{
- font-weight: bold;
+.modalContainer p {
+  font-weight: bold;
   padding: 10px;
- 
 }
 
-.modalContainer p a{
+.modalContainer p a {
   text-decoration: none;
   color: var(--tertiary--color);
 }
 
 /*Contact Me section*/
-.contact_me {
-  color: var(--secondary-color);
-  text-align: center;
-  margin: 20px 10px 0px 60px;
+.contact_form {
+  width: 80%;
+  margin: auto;
+}
+.contact_me div {
+  display: flex;
+  margin-bottom: 10px;
+}
     
+.contact_me div label {
+  cursor: default;
+  width: 20%;
+  margin-left: 10px;
+}
 
+.contact_me textarea, .contact_me input {
+  width: 80%;
+}
+
+.contact_me textarea {
+  height: 120px;
+  border:3px;
+  padding:5px;
+}
+
+.button_wrapper {
+  justify-content: end;
+}
+/* Footer section */
+
+.footer{
+  color: var(--secondary-color);  
+  margin: 20px 10px 0px 60px;
+  display: flex;
+  justify-content: center;  
 }
 
 .links a {
   margin: 10px;
   font-size: larger;
-
 }
 
 
+.button-72 {  
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.button-72:hover {
+  background-image: linear-gradient(#B384C9, #391F5B 50%);
+}
+
+@media (min-width: 768px) {
+  .button-72 {
+    font-size: 21px;
+    padding: 18px 34px;
+  }
+}
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
 /*this will be applied on any screen smaller than 980px*/
@@ -236,7 +296,8 @@ header {
     margin: 0;
   }
 
-  .navigation nav ul li a {
+  .navigation nav ul li a,
+  .navigation nav ul li span {
     font-size: 22px;
   }
 
@@ -250,8 +311,9 @@ header {
 /*this will be applied on any screen smaller than 575px*/
 @media screen and (max-width:575px) {
 
-  .navigation nav ul li a {
-    font-size: 18px;
+  .navigation nav ul li a,
+  .navigation nav ul li span {
+    font-size: 15px;
   }
 
   .title {
@@ -261,7 +323,6 @@ header {
   .description {
     padding: 5px;
     font-size: 12px;
-
   }
 
   .contact_me .description {
