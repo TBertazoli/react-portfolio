@@ -64,6 +64,12 @@ header {
   cursor: pointer;
 }
 
+.navActive {
+ background-color: #744988;
+ border-radius: 30px;
+ margin:5px;
+}
+
 /*End of Header section*/
 
 /* Hero section */
@@ -295,12 +301,12 @@ header {
     display: flex;
     flex-direction: column;
   }
- 
-    .button-72 {
-      font-size: 21px;
-      padding: 18px 34px;
-    }
-  
+
+  .button-72 {
+    font-size: 21px;
+    padding: 18px 34px;
+  }
+
   .contact_info div {
     border-bottom: none;
   }
@@ -333,13 +339,22 @@ header {
     font-size: 14px;
   }
 
+  .modalContainer {
+    background: var(--primary-color);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+  }
+
   .button-72 {
     font-size: 15px;
     padding: 10px 24px;
   }
 
   .description {
-    padding: 5px;    
+    padding: 5px;
   }
 
   .contact_me .description {

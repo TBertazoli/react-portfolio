@@ -26,6 +26,18 @@ function Portfolio() {
             repository: "https://github.com/TBertazoli/Horiseon"
         },
         {
+            name: "Pizza Hunt",
+            description: "This project wa to develop a website where you can create new pizzas and add comments",
+            website: "https://pizza-bertazoli.herokuapp.com/",
+            repository: "https://github.com/TBertazoli/pizza-hunt"
+        },
+        {
+            name: "Project Fitness",
+            description: "On this project I was responsible for writting the front-end JavaScript functionality. Created local storage and functions to store the weight, height and date. Created a function to calculate BMI and added a calendar to track the workout progress page.",
+            website: "https://tbertazoli.github.io/Project-Fitness/",
+            repository: "https://github.com/TBertazoli/Project-Fitness"
+        },        
+        {
             name: "Lab Notebook",
             description: "This project was to develop a virtual lab notebook where users can create projects and experiments",
             website: "https://obscure-lake-69191.herokuapp.com/",

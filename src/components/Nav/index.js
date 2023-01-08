@@ -5,7 +5,8 @@ function Nav(props) {
         contactSelected,
         setContactSelected,
         portfolioSelected,
-        setPortfolioSelected,        
+        setPortfolioSelected,  
+        aboutMeSelected,
         setAboutMeSelected,
         resumeSelected,
         setResumeSelected
@@ -21,7 +22,7 @@ function Nav(props) {
             <div className="navigation">
                 <nav>
                     <ul>
-                        <li>
+                        <li className={`${aboutMeSelected && 'navActive'}`}>
                             <a data-testid="about" href="#about" onClick={() => {
                                 setAboutMeSelected(true);
                                 setPortfolioSelected(false);
