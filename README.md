@@ -4,7 +4,7 @@
   This website is where I showcase some of the projects that I have worked with during my Bootcamp at Rice University.  This portfolio was built using React. The website has an about me section with my image and a little description about myself, a contact form section, a resume section where you can download my resume and a portfolio section with some projects. When you click on an specific project you will see a modal with a description of the project a link to git hub repository and if clicked on the image it will take you to the deployed website. All sections have a footer with my linkedin, GitHub, Twitter, email and phone por contact.
 
    
-   <img src="../../assets/Readme/Screenshot 2023-01-07 204503.png">
+   <img src="src/assets/Readme/Screenshot 2023-01-07 204503.png">
    
 
    ## Table of contents
