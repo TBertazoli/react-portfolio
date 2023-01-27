@@ -43,6 +43,14 @@ function Portfolio() {
             website: "https://obscure-lake-69191.herokuapp.com/",
             repository: "https://github.com/emsaw721/lab-rats"
         },
+        {
+            name: "Oinc",
+            description: "This project was to develop a budget app where users can add income and expenses and add budget",
+            website: "https://guarded-gorge-65763.herokuapp.com/",
+            repository: "https://github.com/emsaw721/stacks-on-stacks"
+        },
+        
+
     ]);
 
     const openLink = (image, i) => {
