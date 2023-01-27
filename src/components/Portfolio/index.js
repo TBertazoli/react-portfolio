@@ -50,7 +50,6 @@ function Portfolio() {
             repository: "https://github.com/emsaw721/stacks-on-stacks"
         },
         
-
     ]);
 
     const openLink = (image, i) => {
@@ -71,7 +70,7 @@ function Portfolio() {
                     <div>
                         <div >
                             {projects.map((image, i) =>
-                            (<div key={image.name} className="project_wrap"><img src={require(`../../assets/projects/${i}.png`)}
+                            (<div key={image.name} className="project_wrap"><img src={require(`../../assets/Projects/${i}.png`)}
                                 alt={image.name}
                                 className="prework"
                                 onClick={() => openLink(image, i)}

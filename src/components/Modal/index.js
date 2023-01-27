@@ -11,7 +11,7 @@ const Modal = ({ onClose, currentProject }) => {
                 <div>
                     <a href={website}>
                         <img className="modalImage"
-                            src={require(`../../assets/projects/${index}.png`)}
+                            src={require(`../../assets/Projects/${index}.png`)}
                             alt="current project"
                         />
                     </a>
