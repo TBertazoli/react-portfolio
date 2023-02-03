@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.a8a062af.css",
-    "main.js": "/react-portfolio/static/js/main.fdc5282d.js",
+    "main.js": "/react-portfolio/static/js/main.85ac006d.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/1.png": "/react-portfolio/static/media/1.45edd9a7f54c21170f2a.png",
     "static/media/2.png": "/react-portfolio/static/media/2.ae46d2d4efe1a283d4e5.png",
     "static/media/3.png": "/react-portfolio/static/media/3.27563b967ca5e182637e.png",
     "static/media/4.png": "/react-portfolio/static/media/4.f14d93222f988fa09e85.png",
     "static/media/5.png": "/react-portfolio/static/media/5.8baa54bc9c0af2c7179e.png",
-    "static/media/vecteezy_abstract-technology-background_8680961.jpg": "/react-portfolio/static/media/vecteezy_abstract-technology-background_8680961.0b84b6ef8425ee77be3e.jpg",
+    "static/media/cover.jpg": "/react-portfolio/static/media/cover.0b84b6ef8425ee77be3e.jpg",
     "static/media/0.png": "/react-portfolio/static/media/0.ab5dc183f4c9313fd30c.png",
+    "static/media/6.png": "/react-portfolio/static/media/6.53961f44d92e65706737.png",
     "static/media/DSC08249_2.jpg": "/react-portfolio/static/media/DSC08249_2.007e09a342685a1f5dfb.jpg",
-    "static/media/Copy of Resume.pdf": "/react-portfolio/static/media/Copy of Resume.94420d35d7c021ca6bab.pdf",
+    "static/media/Junior-web-developer-Resume.pdf": "/react-portfolio/static/media/Junior-web-developer-Resume.87730fc4a70ce513ad9d.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.a8a062af.css.map": "/react-portfolio/static/css/main.a8a062af.css.map",
-    "main.fdc5282d.js.map": "/react-portfolio/static/js/main.fdc5282d.js.map",
+    "main.85ac006d.js.map": "/react-portfolio/static/js/main.85ac006d.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8a062af.css",
-    "static/js/main.fdc5282d.js"
+    "static/js/main.85ac006d.js"
   ]
 }
