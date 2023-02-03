@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from '../Footer'
-import resume from '../../assets/Copy of Resume.pdf'
+import resume from '../../assets/QA Software - Resume.pdf'
 
 function Resume() {
     return (
