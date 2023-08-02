@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from '../Footer'
-import resume from '../../assets/Junior-web-developer-Resume.pdf'
+import resume from '../../assets/Junior web developer - Resume.pdf'
 
 function Resume() {
     return (
