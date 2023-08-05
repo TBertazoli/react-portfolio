@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.a8a062af.css",
-    "main.js": "/react-portfolio/static/js/main.85ac006d.js",
+    "main.js": "/react-portfolio/static/js/main.aece76f0.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/1.png": "/react-portfolio/static/media/1.45edd9a7f54c21170f2a.png",
     "static/media/2.png": "/react-portfolio/static/media/2.ae46d2d4efe1a283d4e5.png",
@@ -12,14 +12,14 @@
     "static/media/0.png": "/react-portfolio/static/media/0.ab5dc183f4c9313fd30c.png",
     "static/media/6.png": "/react-portfolio/static/media/6.53961f44d92e65706737.png",
     "static/media/DSC08249_2.jpg": "/react-portfolio/static/media/DSC08249_2.007e09a342685a1f5dfb.jpg",
-    "static/media/Junior-web-developer-Resume.pdf": "/react-portfolio/static/media/Junior-web-developer-Resume.87730fc4a70ce513ad9d.pdf",
+    "static/media/Junior web developer - Resume.pdf": "/react-portfolio/static/media/Junior web developer - Resume.dd97d83a788157a3be5e.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.a8a062af.css.map": "/react-portfolio/static/css/main.a8a062af.css.map",
-    "main.85ac006d.js.map": "/react-portfolio/static/js/main.85ac006d.js.map",
+    "main.aece76f0.js.map": "/react-portfolio/static/js/main.aece76f0.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8a062af.css",
-    "static/js/main.85ac006d.js"
+    "static/js/main.aece76f0.js"
   ]
 }
