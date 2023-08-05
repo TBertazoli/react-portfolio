@@ -9,7 +9,7 @@ function Resume() {
                 <div className="title">
                     <h2>Resume</h2>
                 </div>                
-                    <h3 className="download">Download my <a href={resume}>resume</a></h3>                
+                    <h3 className="download">Download my <a href={resume}>Resume</a></h3>                
                 <div className="resume">
                     <h2>Front-end Proficiencies</h2>
                     <li>
