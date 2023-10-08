@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import './App.css';
-import Nav from './components/Nav';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import ContactForm from './components/Contact';
-import Resume from './components/Resume';
+import React, { useState } from "react";
+import "./App.css";
+
+import Nav from "./components/Nav";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -32,7 +33,7 @@ function App() {
         {contactSelected && <ContactForm></ContactForm>}
         {resumeSelected && <Resume></Resume>}
       </main>
-    </div >
+    </div>
   );
 }
 
