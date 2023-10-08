@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: rgb(171, 165, 179);
+  background-color: white;
   font-family: sans-serif;
 }
 
@@ -65,36 +65,12 @@ header {
 }
 
 .navActive {
- background-color: #744988;
- border-radius: 30px;
- margin:5px;
+  background-color: #744988;
+  border-radius: 30px;
+  margin: 5px;
 }
 
 /*End of Header section*/
-
-/* Hero section */
-.subtitle {
-  font-size: 20px;
-  background-color: var(--tertiary--color);
-  color: var(--primary-color);
-  padding: 5px 5px;
-  margin: 15px;
-  position: absolute;
-}
-
-.cover {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  max-height: 200px;
-}
-
-.cover_image {
-  width: 100%;
-  height: 100%;
-}
-
-/*End of Hero Section*/
 
 /*about me section*/
 .about_me {
@@ -109,7 +85,7 @@ header {
 }
 
 .description p {
-  padding: 10px
+  padding: 10px;
 }
 
 .about_me img {
@@ -156,7 +132,7 @@ header {
 
 /* modal */
 .modalBackdrop {
-  background: rgba(0, 0, 0, .65);
+  background: rgba(0, 0, 0, 0.65);
   bottom: 0;
   left: 0;
   overflow: auto;
@@ -179,7 +155,6 @@ header {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
-
 }
 
 .modalImage {
@@ -198,7 +173,7 @@ header {
 }
 
 /*Contact Me section*/
-.contact_form {
+/* .contact_form {
   width: 80%;
   margin: auto;
 }
@@ -223,7 +198,7 @@ header {
   height: 120px;
   border: 3px;
   padding: 5px;
-}
+} */
 
 .button_wrapper {
   justify-content: end;
@@ -253,28 +228,33 @@ header {
   font-size: larger;
 }
 
-
 .button-72 {
   align-items: center;
   background-color: initial;
-  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+  background-image: linear-gradient(
+    rgba(179, 132, 201, 0.84),
+    rgba(57, 31, 91, 0.84) 50%
+  );
   border-radius: 42px;
   border-width: 0;
-  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
-  color: #FFFFFF;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #ffffff;
   cursor: pointer;
   display: flex;
   font-family: Quicksand, sans-serif;
   font-size: 18px;
   font-weight: 700;
   justify-content: center;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   line-height: 16px;
   margin: 0;
   padding: 18px 18px;
   text-align: center;
   text-decoration: none;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 16px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -282,13 +262,12 @@ header {
 }
 
 .button-72:hover {
-  background-image: linear-gradient(#B384C9, #391F5B 50%);
+  background-image: linear-gradient(#b384c9, #391f5b 50%);
 }
-
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
 /*this will be applied on any screen smaller than 980px*/
-@media screen and (max-width:980px) {
+@media screen and (max-width: 980px) {
   .description {
     min-height: 500px;
   }
@@ -296,7 +275,7 @@ header {
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
 /*this will be applied on any screen between 768px to 575px*/
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .contact_info {
     display: flex;
     flex-direction: column;
@@ -325,11 +304,9 @@ header {
   }
 }
 
-
 /*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
 /*this will be applied on any screen smaller than 575px*/
-@media screen and (max-width:575px) {
-
+@media screen and (max-width: 575px) {
   .navigation nav ul li a,
   .navigation nav ul li span {
     font-size: 15px;
